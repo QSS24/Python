@@ -1,26 +1,35 @@
-Server.py
-I. Import {socket, os, sys, threading, time, import queue}
+Sample_Server.py
 
-#II. to Create a class:
+Import { socket, os, sys, threading, time }
+Import Queue, OrderedDict, regex
 
+Global:
+    Allowed_host = -regex.match('^\d *[2]'g)
+    Allowed_DNS = -regex('+\d*[0-9]')    
+    
 Class __Server__(self)--> int,str, vector, bin:
-    Sock = socket.socket(Socket_AF_inet, Socket.Sock_Stream | Sock_Dgram)
-    Sock_opt = socket.set_sockopt(Socket.AF_inet, Socket.Sock_USERADDR,1)
-    hostname = sock.gethostname(' ', <str>)
-    port = input( 'please select a port:' <int> ) 
-    connect = Sock.connect_ex(('hostname','port'))
+    Sock = socket.socket( Socket_AF_inet, Socket.Sock_Stream )  // Sock_Dgram for UDP (less desirable due to Security issues)
+    Sock_opt = socket.set_sockopt( Socket.AF_inet, Socket.Sock_USERADDR,1 )
+           //UserAddr options will be further discussed
+
+    hostname := input('This is where you enter hostname:' if ( ! sock.gethostname(' ', <str>) \n
+        Switch(hostname, args**) in:
+          -*) 
+    )
+    port = input( 'please select a port:' <int> if  ) 
+    Connect = Sock.connect_ex(('hostname','port'))
     client = client.connect()
 
     Def Set_Client_receive(message):
          Message = client.recv().decode('utf-8')
-         if len(message) is none:
+         if len(Message) == none && len(Message) -gt kb:
             sys exit():
          while 1: 
             for {bytes in message} as read:
             set[bin] = read.writeline(bytes)
             Except KeyboardError as er:
-            print(f" there's been an error: {sys exit(1)}")
+                print(f" there's been an error: {sys exit(1)}")
 
-    
     Def Set_Client_Send():
         message_send = client.sendall(message).encode('utf-8')
+
