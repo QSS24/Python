@@ -1,1 +1,2 @@
 # NetworkProgramming
+I've dabbled with network programming a while ago and took a hiatus and now i'm commencing on this journey with more learned knowledge i've obtained from various sources: cisco, compTIA, and as well as python network engineer. It'll be a bit more in depth where i'll incorporate various interfaces devices such as: Variable Length Subnetting, Routers, *LANs, Switches along with encrypting proxy servers and etc. I'm looking forward being a concerted contributor and would love to collaborate with anyone who's embarking on this path as a network engineer. 
