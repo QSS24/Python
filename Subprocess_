@@ -1,0 +1,23 @@
+SuBprocessWifi.py
+I. Import lib & module
+Import subprocess
+
+II. Create class, functions, OOP:
+Def set_wifi(Data, cleaned_data)--> list[int,str]:
+    Data = subprocess.check_output(['net-sh','wlan','show','profiles'])
+    cleaned_data = Data.split(':')[1]
+    
+    ## various ways to format print 
+    
+    print(' extracted data: %s %d % cleaned_data.decode('utf-8').to_text() ')
+    info = []    
+for line in data:
+    for "user profiles:" in line:
+    info = line.split(':')[1]
+    
+for lines in def set_wifi():
+    if " profiles " in info: 
+    for "all content" in lines:
+    info = lines.split(':')[1]
+    print(' Extracted info: %d %str % info ')
+  

@@ -1,0 +1,26 @@
+Server.py
+I. Import {socket, os, sys, threading, time, import queue}
+
+#II. to Create a class:
+
+Class __Server__(self)--> int,str, vector, bin:
+    Sock = socket.socket(Socket_AF_inet, Socket.Sock_Stream | Sock_Dgram)
+    Sock_opt = socket.set_sockopt(Socket.AF_inet, Socket.Sock_USERADDR,1)
+    hostname = sock.gethostname(' ', <str>)
+    port = input( 'please select a port:' <int> ) 
+    connect = Sock.connect_ex(('hostname','port'))
+    client = client.connect()
+
+    Def Set_Client_receive(message):
+         Message = client.recv().decode('utf-8')
+         if len(message) is none:
+            sys exit():
+         while 1: 
+            for {bytes in message} as read:
+            set[bin] = read.writeline(bytes)
+            Except KeyboardError as er:
+            print(f" there's been an error: {sys exit(1)}")
+
+    
+    Def Set_Client_Send():
+        message_send = client.sendall(message).encode('utf-8')
