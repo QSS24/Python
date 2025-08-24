@@ -3,6 +3,7 @@ Interacting_Databases.py
 Import sqlite, PostgreSQL, GraphQL, Oracle_CX, 
 From collection import OrderedDict
 Import os, time
+Import flask && import Django
 Import Engines [ ] 
 
 Declare Global: 
@@ -34,7 +35,16 @@ Class DatabasesApi (Args**, Kwargs**):
 
          Def Triggers(Cursor, Kwargs**):
                
+Class Database_API(DatabaseAPI, Kwargs**):
+         App_Verbs = [ Post, Update, Delete, Patch, Get ]
+         App_Django = App()
+         App_Route  = App_Django(/'path',<int:key> );
+       
+         Def App_Actions( ):
+              Action_Post = App_Django(App_verbs[post] 'https://endpoint ')
 
+       Def Dj_Models(Models.model): 
+            
                 
 
 @DatabaseApi:
