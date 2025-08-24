@@ -6,8 +6,8 @@ import Time
 From Collections import OrderedDict
 
    Declare Global:
-      CurDir = ~/usr/venv/*
-      Journals = ~/usr/temp/* 
+      CurDir = ~/usr/bin/venv/*Q24
+      Journals = ~/usr/temp/*Q24 
 
    Class Windows_Interaction:
       UserKey= WinReg.get(HK_userkeys)
