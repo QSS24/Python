@@ -25,8 +25,17 @@ Class DatabasesApi (Args**, Kwargs**):
                     Date_hired not null int; \n
                     " ) )
 
-        Def Views():
-            
+        Def Views(Cursor, Kwargs**):
+            New_views = Cursor.Execute(Create " Permanent Views Users_Copied \n
+                From Rains Select Last_name as Q
+                Where (Q %Sinner|python% ) && Q.GUID = 
+                Sort by Ascending off set 10
+                return { New_views } 
+
+         Def Triggers(Cursor, Kwargs**):
+               
+
+                
 
 @DatabaseApi:
        Class _Auth( DatabaseApi, Kwargs**):
