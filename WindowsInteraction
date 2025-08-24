@@ -1,0 +1,14 @@
+Window_Manager.py
+
+Import WMI, WinReg
+Import OS, Threading
+import Time
+From Collections import OrderedDict
+
+   Declare Global:
+      CurDir = ~/usr/venv/*
+      Journals = ~/usr/temp/* 
+
+   Class Windows_Interaction:
+      UserKey= WinReg.get(HK_userkeys)
+        
