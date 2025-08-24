@@ -2,15 +2,15 @@ Interacting_Databases.py
 
 Import sqlite, PostgreSQL, GraphQL, Oracle_CX, 
 From collection import OrderedDict
-Import os
+Import os, time
 Import Engines [ ] 
 
 Declare Global: 
     path = ~/usr/bin/venv/*QSS24_Databases
     new_Db     = os.join(path())
     Declare -a Unauthorized_users = [ Copiers, Ersat, Delusioned_Confucius ]
-@Path(Kwargs**):
 
+@Path(Kwargs**):
 Class DatabasesApi (Args**, Kwargs**):
         Connect = Connection() \n
                  connection.connect()
@@ -18,9 +18,18 @@ Class DatabasesApi (Args**, Kwargs**):
         Def _Create_Table (Cursor) :
              Action = Cursor.Execute()
              Rains = Action(Create "table Raining not null varchar(265)")\n
-             Columns = Cursor.Execute(Create "        
+             Columns = Cursor.Execute(Create " Collumns (' GUID Incremental not null int Primary Key (GUID);\n
+                    Last_Name Varchar(265) not null Secondary Key (Last_Name); \n
+                    First_Name ...
+                    DOB not null int; \n
+                    Date_hired not null int; \n
+                    " ) )
+
+        Def Views():
+            
 
 @DatabaseApi:
        Class _Auth( DatabaseApi, Kwargs**):
-             Revoke = Action(Revoke ' Unauthorized_users from Rains '
+             Revoke = Action(Revoke ' Unauthorized_users from Rains ' )
+             
              
