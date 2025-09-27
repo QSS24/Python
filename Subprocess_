@@ -17,3 +17,6 @@ Def set_wifi(Data, cleaned_data)--> list[int,str]:
          info = lines.split(':')[1]
     print(' Extracted info: %d %str % info ')
   
+if ___name___ == "__main__"
+Getwifi = set_wifi()
+Getwifi.run()
