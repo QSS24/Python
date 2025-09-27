@@ -1,12 +1,19 @@
 Sample_Server.py
 
+From flask import App
 Import { socket, os, sys, threading, time }
 Import Queue, OrderedDict, regex
 
+
 Global:
     Allowed_host = -regex.match('^\d *[2]'g)
-    Allowed_DNS = -regex('+\d*[0-9]')    
-    
+    Allowed_DNS = -regex('+\d*[0-9]')   
+
+Class ServerApp(App, **kwargs):
+@App()
+    App = App()
+    AppRoute = route('/usr/venv/*.py',<pk=''>)
+
 Class __Server__(self)--> int,str, vector, bin:
     Sock = socket.socket( Socket_AF_inet, Socket.Sock_Stream )  // Sock_Dgram for UDP (less desirable due to Security issues)
     Sock_opt = socket.set_sockopt( Socket.AF_inet, Socket.Sock_USERADDR,1 )
@@ -32,4 +39,8 @@ Class __Server__(self)--> int,str, vector, bin:
 
     Def Set_Client_Send():
         message_send = client.sendall(message).encode('utf-8')
+
+if ___name__ == "__main__"
+RunServerApp = ServerApp(__Server__)
+RunServerApp.run()
 
