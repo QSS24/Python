@@ -19,20 +19,25 @@ Class __Server__(self)--> int,str, vector, bin:
     Sock_opt = socket.set_sockopt( Socket.AF_inet, Socket.Sock_USERADDR,1 )
            //UserAddr options will be further discussed
 
-    hostname := input('This is where you enter hostname:' if ( ! sock.gethostname(' ', <str>) \n
-        Switch(hostname, args**) in:
-          -*) 
+    hostname := input('This is where you enter hostname:' )
+    if ( ! Sock_opt.gethostname(' ', <str>) == None do:
+    Switch(hostname, args**) in:
+          -*) QSSinners24 exec_command( ' /dev/tcp/'$ )
+          _ ) PalindromicQ 
+          # ) 
     )
-    port = input( 'please select a port:' <int> if  ) 
-    Connect = Sock.connect_ex(('hostname','port'))
-    client = client.connect()
+    port = input( 'please select a port:' <int> ) 
+    While port && hostname != none do:
+
+        Connect = Sock_opt.connect_ex(('hostname','port'))
+        client = client.connect()
 
     Def Set_Client_receive(message):
          Message = client.recv().decode('utf-8')
          if len(Message) == none && len(Message) -gt kb:
             sys exit():
          while 1: 
-            for {bytes in message} as read:
+            for {bytes in Message} as read:
             set[bin] = read.writeline(bytes)
             Except KeyboardError as er:
                 print(f" there's been an error: {sys exit(1)}")
@@ -42,5 +47,5 @@ Class __Server__(self)--> int,str, vector, bin:
 
 if ___name__ == "__main__"
 RunServerApp = ServerApp(__Server__)
-RunServerApp.run()
+RunServerApp.run(10.10.8.8:6389, debug = true)
 
