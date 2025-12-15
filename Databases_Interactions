@@ -13,8 +13,7 @@ Declare Global:
 
 @Path(Kwargs**):
 Class DatabasesApi (Args**, Kwargs**):
-        Connect = Connection() \n
-                 connection.connect()
+        Connection = connect.connect()
         Cursor = Connection.Connect()  
         Def _Create_Table (Cursor) :
              Action = Cursor.Execute()
@@ -24,6 +23,7 @@ Class DatabasesApi (Args**, Kwargs**):
                     First_Name ...
                     DOB not null int; \n
                     Date_hired not null int; \n
+                    DateTime TimeStamp;
                     " ) )
 
         Def Views(Cursor, Kwargs**):
