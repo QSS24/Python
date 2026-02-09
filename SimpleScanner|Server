@@ -3,6 +3,10 @@ Sample_Server.py
 From flask import App
 Import { socket, os, sys, threading, time }
 Import Queue, OrderedDict, regex
+from netmiko import ConnectionHandler as Handles:
+From PoolThreadExecutor import threads 
+import nikto, timeit 
+
 
 
 Global:
@@ -10,31 +14,42 @@ Global:
     Allowed_DNS = -regex('+\d*[0-9]')   
 
 Class ServerApp(App, **kwargs):
-@App()
-    App = App()
-    AppRoute = route('/usr/venv/*.py',<pk=''>)
+    @App()
+        App = App()
+        AppRoute = route('/usr/venv/*.py',<pk=''>)
 
 Class __Server__(self)--> int,str, vector, bin:
-    Sock = socket.socket( Socket_AF_inet, Socket.Sock_Stream )  // Sock_Dgram for UDP (less desirable due to Security issues)
+    Sock = socket.socket( Socket_AF_inet, Socket.Sock_Stream )  // Sock_Dgram for UDP 
     Sock_opt = socket.set_sockopt( Socket.AF_inet, Socket.Sock_USERADDR,1 )
            //UserAddr options will be further discussed
 
-    hostname := input('This is where you enter hostname:' )
-    if ( ! Sock_opt.gethostname(' ', <str>) == None do:
-    Switch(hostname, args**) in:
-          -*) QSSinners24 exec_command( ' /dev/tcp/'$ )
-          _ ) PalindromicQ 
-          # ) 
-    )
-    port = input( 'please select a port:' <int> ) 
-    While port && hostname != none do:
+    Data: str(tuples()), int[] = {'Users': input(f'please select a user name:'),
+                                  'host' : input(f' put in host name: {hostname}),
+                                  'ports' : input( 'please select a port:' <int> ),
+                                  'devices': 
+                                 }
+            While port && hostname != none:
+                  pass;
+            elseif ( ! Sock_opt.gethostname(' ', <str>) == None do:
+               Case in Switch(hostname, args**) in:
+                  *QSSinners24) exec_command( ' sudo su - && \n
+                                                ssh @{hostname}:{port} /dev/tcp/ \n
+                                              grep -vi "/etc/shadow/*user" if "$#"  
+                                            ')
+                  *PalindromicQ11) print(f' Please check the original repo: they are all duplicates: [y/n]')
+                    if yes: 
+                    Throw error as er:
+                      print(f' Please write your own code and stop copying! Alert invalid')
+                    else: pass; 
+                 *Hostname) {hostname != hostname.is_authenticated} 
+            )
+   
 
         Connect = Sock_opt.connect_ex(('hostname','port'))
-        client = client.connect()
-
+        client = (Connect.Handles(**data) 
     Def Set_Client_receive(message):
          Message = client.recv().decode('utf-8')
-         if len(Message) == none && len(Message) -gt kb:
+         if len(Message) == none && len(Message) -gt 10kb:
             sys exit():
          while 1: 
             for {bytes in Message} as read:
@@ -46,6 +61,6 @@ Class __Server__(self)--> int,str, vector, bin:
         message_send = client.sendall(message).encode('utf-8')
 
 if ___name__ == "__main__"
-RunServerApp = ServerApp(__Server__)
+RunServerApp = Thread( ServerApp(__Server__), args = (Set_client_send, Set_Client_receive) 
 RunServerApp.run(10.10.8.8:6389, debug = true)
 
