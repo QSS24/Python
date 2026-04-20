@@ -1,3 +1,9 @@
+SECRET_KEYS = "...."
+
+DEBUG = BOOL  
+
+ALLOW_HOST = []
+
 INSTALLED_APPS = 
 [
     "Django.contrib.auth",
