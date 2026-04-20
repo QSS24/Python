@@ -1,1 +1,15 @@
 ## Views where HTML will be extrapolated 
+
+From Django.shortcut import Render, redirect
+From Django.contrib.auth import Authenticate, Login
+From Django.http import HttpResponse
+
+Globals:
+    Dirs = pathlib.Paths(__file__).resolve()
+
+Class Amenities(**Kwargs, self ):
+      __Super__().__init__()
+
+     def Amenities_views (**kwargs, requests):
+         page = Request.Object.create()
+         
