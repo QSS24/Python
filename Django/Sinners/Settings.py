@@ -17,4 +17,6 @@ INSTALLED_APPS =
 
 MIDDLEWARE = [
     "Django.middleware.security.middlewaresecurity",
-    
+]
+
+TEMPLATES = [ ]
