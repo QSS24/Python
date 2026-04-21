@@ -1,0 +1,13 @@
+from django.auth import
+
+
+Globals:
+    Dependencies = [ ]
+    Migration 
+
+Class Migration(**kwargs, self):
+    __super__().__init__(self):
+
+    def Migrate(**kwargs, **args, self):
+
+        migration = migration()
