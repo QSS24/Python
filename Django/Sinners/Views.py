@@ -12,4 +12,16 @@ Class Amenities(**Kwargs, self ):
 
      def Amenities_views (**kwargs, requests):
          page = Request.Object.create()
-         
+
+
+Class HomePage(**Kwargs, **args, self) :
+
+    __super__().__init__(self):
+
+    def Homepage_views(**kwargs, request):
+        Try:
+            if request.method == ['post', 'patch', 'delete', 'update'] & users._authenticated[] do:
+            req_page = Request.object.
+
+
+
