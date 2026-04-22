@@ -1,3 +1,4 @@
 
 
 Pip install -y whitenoise --update='latest' 
+    gunicorn && python-decouple 
