@@ -11,8 +11,8 @@ Class Access([int, char]:Models, **Kwargs, **args, self):
      Meta = Models.model(serialization.jason)
 
      Def Credentials(Models.model, self):
-             Users = Models.PrimaryKey(Users, default = bool)
-             Emails = models.EmailField(varchar = 256, default = " ")
+             Users = Models.PrimaryKey(Users, default = bool, on_delete = models.cascade)
+             Emails = models.ForeighField(varchar = 256, default = null, on_delete = models.cascade)
              Contact = Models.IntegerField(smallint = 15, null)
 
 
@@ -27,4 +27,21 @@ Class HomePage([int, char]:Pages, **Kwargs, **args, self):
             While Pages != none: 
             
 
+Class Amenities([int, char]:Services, **Kwargs, **args, self):
+     __super__().__repr__(self)
+     Meta = { Models.model(serialization.jason) 
+            }
+
+     def Services(self):
+
+
+
+
+Class Facility(**Kwargs, **args, self):
+     __super__().__init__(self):
+     Meta = { models.model(serialization.jason)
+
+     def Cost(self):
+          Price = Models.IntegerField (default = " ")
+          
 
