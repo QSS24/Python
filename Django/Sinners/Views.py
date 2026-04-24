@@ -2,7 +2,11 @@
 
 From Django.shortcut import Render, redirect
 From Django.contrib.auth import Authenticate, Login
+From Djangon.Contrib.Auth.Decorators import login_required 
 From Django.http import HttpResponse
+
+@login_required(**Kwargs,self):
+    __super__().__init__(self):
 
 Globals:
     Dirs = pathlib.Paths(__file__).resolve()
