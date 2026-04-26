@@ -1,9 +1,17 @@
 ##Models for postulated apps 
 
 From django.conf import render
+From django.contrib.auth.models import models
 From PoolthreadsExecutor import Threading as Threds
 Import Queue, OrderedDict, OS,
 From Datetime import Time 
+
+Class Admins(Models, **Kwargs, **Args, self):
+     __super__().__init__(self):
+        Meta = Models.model(self):
+     Try: 
+     Grant_users = Users.Create.Object(Users1, Users@yahoo.com, password=sha256(), is_staff=bool)
+     
 
 
 Class Access([int, char]:Models, **Kwargs, **args, self):
