@@ -11,7 +11,8 @@ Class Grant_Credentials(tuples(str, int: Admin.ModelsAdmin), **Kwargs, **args, s
 
     Users_display = 
     Users_sorted = 
-
+    Proxy_Site = Admin.AdminSite(Register())
+    
     Try: While Granted_users().is_authenticated && != none: 
         for i, m, n  in Granted_users() do:
             Admin.site.register(i)
