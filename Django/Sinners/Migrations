@@ -1,13 +1,20 @@
-from django.auth import
+from django.db import migrations
+import Time, OrderedDict, Queue, Lru_Caching
 
 
 Globals:
     Dependencies = [ ]
     Migration 
 
-Class Migration(**kwargs, self):
+@Lru_Cashing(**Kwargs, max_size = none):
+Class Migration(**kwargs, Migrations.Migration, self):
     __super__().__init__(self):
+    __eq__(self): // will be called by migration framework to detect changes between states 
+
+    Dependencies = [("Migrations",  Outdated = " Models[ _, i ] for _, i in Outdated_models()")
+    Operations = [(Migrations.DeleteModels(),
+                    Migrations.AddField())]
+
 
     def Migrate(**kwargs, **args, self):
-
         migration = migration()
