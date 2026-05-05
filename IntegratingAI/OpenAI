@@ -1,0 +1,21 @@
+AIAgents: Gemini, Claude, ChatGpt, OpenAI 
+
+
+#! /bin/venv/bash
+Flush rules_set
+set uox && set Errtrace
+Sudo su apt-get install -y uv update="latest"
+
+venv bin/activate 
+uv init .
+
+
+Import [ sys, os, OrderedDict, Queue ] 
+From LangChain import OpenAI 
+From LangGraph 
+
+Globals:
+    MyAI = open(OpenAI, 'wrx', utf-encoding = 'english')
+Class Integrating_OpenAI( tuples(str()), int[]:**Kwargs, self): 
+    __super__().__init__(self):
+    
