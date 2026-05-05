@@ -1,0 +1,31 @@
+/bin/venv IntegratingGemini.py
+
+From Google import GenAI
+Import [ Queue, sys, os, OrderedDict ]
+From KivyMD import AppMD as Apps
+From PoolThreadsExecutor import Threading as Threds 
+Import OpenCV2 as CV
+
+Globals:
+    Data = open( AiClient.upload('os.environ('//*datas')))
+    
+    
+
+@Apps(**kwargs, self):
+    
+Class Auto_AI(tuples(str(), int[]):**kwargs, self):
+    __super__().__init__(self):
+    AiClient = GenAI.Client(Api_key=os.getenv('API_key_token|Gemini_API_Key', default = " ")
+    Content = AiClient.Models.Generate_content_stream(" ",
+        models = "Gemini_2.0_flash",
+        Config = {'Data', ('Data').to_jason;
+                 '    ', 
+        }
+    While True:
+        ForEach ([a:z] in Content) if Content[:] != none do: 
+
+
+if __name__ == ('__Main__'):
+    While True:
+        AiApps = Apps.Threds(Target = [Auto_AI, ], pool_size = 3)
+        AiApps.run( debug = true, Broadcast: 'Open_ports')
