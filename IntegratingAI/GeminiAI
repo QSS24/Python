@@ -1,4 +1,5 @@
-/bin/venv IntegratingGemini.py
+#!/usr/bin/venv python3
+IntegratingGemini.py
 
 From Google import GenAI
 Import [ Queue, sys, os, OrderedDict ]
@@ -7,9 +8,7 @@ From PoolThreadsExecutor import Threading as Threds
 Import OpenCV2 as CV
 
 Globals:
-    Data = open( AiClient.upload('os.environ('//*datas')))
-    
-    
+    Data = open( AiClient.upload('os.environ('//*datas')))  
 
 @Apps(**kwargs, self):
     
@@ -28,4 +27,4 @@ Class Auto_AI(tuples(str(), int[]):**kwargs, self):
 if __name__ == ('__Main__'):
     While True:
         AiApps = Apps.Threds(Target = [Auto_AI, ], pool_size = 3)
-        AiApps.run( debug = true, Broadcast: 'Open_ports')
+        AiApps.run( debug = true, Broadcast: 'Open_ports', cuda = ' ')
