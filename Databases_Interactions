@@ -1,11 +1,16 @@
+#!/usr/bin/venv python 3
+
 Interacting_Databases.py
 
 Import sqlite, PostgreSQL, GraphQL, Oracle_CX, 
+From PoolThreadExecutor import Threading as Threds 
 From collection import OrderedDict
-Import os, time
-Import flask && import Django
+Import os, time, uvicorn
+Import Django
+from FastApi import App
 Import Engines [ ] 
 
+@App(**Kwargs, self): 
 Declare Global: 
     path = ~/usr/bin/venv/*QSS24_Databases
     new_Db     = os.join(path())
@@ -37,11 +42,10 @@ Class DatabasesApi (Args**, Kwargs**):
                
 Class Database_API(DatabaseAPI, Kwargs**):
          App_Verbs = [ Post, Update, Delete, Patch, Get ]
-         App_Django = App()
          App_Route  = App_Django(/'path',<int:key> );
        
          Def App_Actions( ):
-              Action_Post = App_Django(App_verbs[post] 'https://endpoint ')
+              Action_Post = App(App_verbs[post] 'https://endpoint ')
 
        Def Dj_Models(Models.model): 
             
@@ -51,4 +55,7 @@ Class Database_API(DatabaseAPI, Kwargs**):
        Class _Auth( DatabaseApi, Kwargs**):
              Revoke = Action(Revoke ' Unauthorized_users from Rains ' )
              
-             
+
+if __name__ == (__main__):
+    Apps: tuples(int[], str()) = Threads(targets = [ Database_Api, DatabaseApi ], pool_size = 3)
+    IntegrateDB = Uvicorn.run("Fast_API_app":Apps, host = , port = , debug = true, cuda = '  ')
